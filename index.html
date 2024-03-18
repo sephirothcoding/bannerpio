@@ -1,6 +1,3 @@
-Pentru a face ca codul să fie pe 75% din lățimea ecranului și să fie receptiv la diferite rezoluții, puteți folosi unități relative, cum ar fi procente, pentru dimensiuni și puteți adăuga câteva linii de cod CSS pentru a face ca conținutul să nu fie trunchiat. Iată codul actualizat:
-
-```html
 <!DOCTYPE html>
 <html data-lt-installed="true">
 
@@ -10,7 +7,7 @@ Pentru a face ca codul să fie pe 75% din lățimea ecranului și să fie recept
         .scroll-left {
             width: 75%;
             margin: 0 auto;
-            height: 50px;
+            height: auto;
             overflow: hidden;
             position: relative;
             background: #D8D8D8;
@@ -20,15 +17,15 @@ Pentru a face ca codul să fie pe 75% din lățimea ecranului și să fie recept
 
         .scroll-left p {
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: auto;
+            white-space: nowrap;
             margin: 0;
             line-height: 50px;
             text-align: center;
             /* Starting position */
             transform: translateX(100%);
             /* Apply animation to this element */
-            animation: scroll-left 90s linear infinite;
+            animation: scroll-left 20s linear infinite;
         }
 
         /* Move it (define the animation) */
@@ -46,11 +43,8 @@ Pentru a face ca codul să fie pe 75% din lățimea ecranului și să fie recept
 
 <body>
     <div class="scroll-left">
-        <p>🎤Emisia dureaza 2 ore in caz ca nu este alt moderator care s-a anuntat.Moderatorul din emisie este rugat sa anunte ce moderator intra dupa el/ea.Multumim de intelgere!Auditie placuta pe Magia Inimii Tale si nu uita sa vizitezi si site-ul nostru wwww.magiainimiitale.ro 🎤</p>
+        <p>🎤Emisia durează 2 ore în caz că nu este alt moderator care s-a anunțat. Moderatorul din emisie este rugat să anunțe ce moderator intră după el/ea. Mulțumim de înțelegere! Audiție plăcută pe Magia Inimii Tale și nu uita să vizitezi și site-ul nostru www.magiainimiitale.ro 🎤</p>
     </div>
 </body>
 
 </html>
-```
-
-Am adăugat o regulă CSS `.scroll-left { width: 75%; margin: 0 auto; }` care face ca elementul să fie pe 75% din lățimea ecranului și să fie centrat pe pagină. Astfel, conținutul nu va fi trunchiat, deoarece este adaptat la lățimea ecranului.
