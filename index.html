@@ -1,50 +1,38 @@
-<!DOCTYPE html>
-<html data-lt-installed="true">
+<html data-lt-installed="true"><head><title>Emy</title>
+<style>
+.scroll-left {
+ width:75%;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: #D8D8D8;
+ color: black;
+ border: 10px solid black;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ animation: scroll-left 90s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%); 		
+ }
+ 100% {
+ transform: translateX(-100%); 
+ }
+}
+</style>
 
-<head>
-    <title>Emy</title>
-    <style>
-        .scroll-left {
-            width: 75%;
-            margin: 0 auto;
-            height: auto;
-            overflow: hidden;
-            position: relative;
-            background: #D8D8D8;
-            color: black;
-            border: 10px solid black;
-        }
-
-        .scroll-left p {
-            position: absolute;
-            width: auto;
-            white-space: nowrap;
-            margin: 0;
-            line-height: 50px;
-            text-align: center;
-            /* Starting position */
-            transform: translateX(100%);
-            /* Apply animation to this element */
-            animation: scroll-left 20s linear infinite;
-        }
-
-        /* Move it (define the animation) */
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="scroll-left">
-        <p>🎤Emisia durează 2 ore în caz că nu este alt moderator care s-a anunțat. Moderatorul din emisie este rugat să anunțe ce moderator intră după el/ea. Mulțumim de înțelegere! Audiție plăcută pe Magia Inimii Tale și nu uita să vizitezi și site-ul nostru www.magiainimiitale.ro 🎤</p>
-    </div>
-</body>
-
-</html>
+</head><body><div class="scroll-left">
+<p>🎤Emisia dureaza 2 ore in caz ca nu este alt moderator care s-a anuntat.Moderatorul din emisie este rugat sa anunte ce moderator intra dupa el/ea.Multumim de intelgere!Auditie placuta pe Magia Inimii Tale si nu uita sa vizitezi si site-ul nostru wwww.magiainimiitale.ro 🎤</p>
+</div>
+</body></html>
